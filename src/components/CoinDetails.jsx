@@ -69,9 +69,10 @@ function CoinDetails() {
           {btns.map((btn) => (
             <button
               key={btn}
-              className="px-3 py-2 bg-gray-300 text-black hover:bg-gray-400 duration-200 rounded text-white font-bold"
+              className={`px-3 py-2 rounded text-white font-bold duration-200 ${days === btn ? 'bg-blue-500' : 'bg-gray-400 hover:bg-gray-500'}`}
               disabled={days === btn}
               onClick={() => switchChartStats(btn)}
+              
             >
               {btn}
             </button>

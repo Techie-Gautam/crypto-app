@@ -91,7 +91,7 @@ function Coins() {
       </form>
 
 
-      <div className="flex flex-wrap items-center justify-center  gap-3">
+      <div className="flex flex-wrap items-center justify-center mb-5  gap-3">
         {coins.map((item) => (
           <CoinCard
             id={item.id}
